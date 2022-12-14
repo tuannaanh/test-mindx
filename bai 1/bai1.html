@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Nhap a : </p>
+    <input type="number" id="a">
+
+    <p>Nhap b : </p>
+    <input type="number" id="b">
+    
+    <h1></h1>
+
+    <input type="button" id="result" value="Show KQ"/>
+
+    <script>
+        let start = Number(document.getElementById('a'));
+        let end = Number(document.getElementById('b'));
+
+
+
+        function checkingSNT(number) {
+            if (number < 2) {
+                return false;
+            } else {
+                for (i = 2; i < number; i++) {
+                    if (number % i == 0) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        function sumSNT(start, end) {
+            let sum = 0;
+
+            if (start < end) {
+                for (i = start; i < end; i++) {
+                    if (checkingSNT(i)) {
+                        sum += i;
+                    }
+                }
+                
+            }else{
+                return sum;
+            }
+
+            return -1;
+        }
+
+        function printSNT(start, end) {
+
+            document.write(sumSNT(start, end));
+
+        }
+
+        var button = document.getElementById("result");
+
+        button.onclick = printSNT;
+
+    </script>
+
+</body>
+
+</html>
