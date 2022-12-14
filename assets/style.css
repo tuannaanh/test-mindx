@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    
+}
+header{
+    text-align: left;
+ 
+}
+.header-container{
+    padding: 0;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.header-container--logo{
+  
+    top: 1rem;
+}
+.header-container--logo #text-logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.header-container--nav{
+   
+    left : 100px;
+    display : flex;
+    margin-top: 50px;
+    gap : 50px;
+    
+}
+.header-container--nav .search-box{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+   }
+
+.header-container--nav .search-box input{
+    padding: 10px 16px;
+    border-radius: 7px;
+    width : 100%;
+}
+.header-container--nav .search-box button{
+    
+    position: absolute;
+    top: 1px;
+    background: #ffff;
+    left:3px;
+    border-radius: 7px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+.header-container--nav a{
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.header-container--nav a.active {
+    background-color: #849FFF;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.main-container{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 50px;
+
+}
+.main-container .use-1{
+   
+    width: 384px;
+    height:  219px;
+    left: 100px;
+    top: 300px;
+    background: #FBFCFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 50px;
+}
+.main-container .use-1 .use-1-text{
+    display: block;
+    
+}
+.main-container .use-1 .use-1-text .interests{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.main-container .use-1 .use-1-text .interests .interests-item {
+    border: 1px solid rgb(74, 71, 71);
+    padding: 5px;
+    border-radius: 10px;
+    color: #516fd4;
+}
+
+#main-container2 {
+    margin-top: 50px;
+}
